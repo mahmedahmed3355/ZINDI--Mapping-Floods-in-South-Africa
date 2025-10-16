@@ -2,8 +2,12 @@
 
 ---
 
-## Overview
-This repository contains our solution for mapping floods in South Africa. All experiments were conducted on Kaggle, and we assume that users will run the notebooks in a Kaggle environment. If running in Google Colab, paths must be modified accordingly.
+## Objective:
+This project focuses on developing machine learning models to detect and map flood-affected areas across South Africa using satellite imagery and geospatial data. The goal is to provide accurate, automated flood extent mapping to support disaster management, risk assessment, and rapid response planning.
+
+## Challenge Overview:
+Flooding is one of the most destructive natural disasters affecting communities, agriculture, and infrastructure. Traditional flood mapping methods rely on manual inspection of satellite images, which is time-consuming and prone to errors.
+The Inundata Challenge aims to leverage AI, Computer Vision, and Remote Sensing techniques to identify flooded regions from multispectral satellite imagery.
 
 ---
 
@@ -60,6 +64,38 @@ We ensemble model predictions using **Nelder-Mead optimization** and apply flood
 - **Empirical Performance**: Both training and test scores improve after normalization, confirming its effectiveness.
 
 ---
+
+## Approach:
+
+Data Preprocessing:
+
+Image normalization and cloud filtering
+
+Cropping into smaller tiles for efficient training
+
+Augmentation (rotation, flipping, brightness changes)
+
+Model Development:
+
+CNN-based segmentation models (e.g., UNet, DeepLabv3+, SegFormer)
+
+Experimentation with pretrained models on geospatial datasets
+
+Comparison between optical and SAR image performance
+
+Evaluation:
+
+Primary metric: Intersection over Union (IoU) or F1 score
+
+Validation on unseen flood regions
+
+Deployment:
+
+Model outputs visualized as binary flood maps
+
+Integrated into GIS dashboards for disaster response
+
+___
 
 ## How to Use
 1. Clone this repository:
