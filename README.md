@@ -1,8 +1,5 @@
 # Inundata: Mapping Floods in South Africa
 
-## In Collaboration With  
-[@medAli-ai](https://github.com/medAli-ai) | [@ngoym](https://github.com/ngoym)
-
 ---
 
 ## Overview
